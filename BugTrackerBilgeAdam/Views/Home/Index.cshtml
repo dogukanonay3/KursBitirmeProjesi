@@ -17,12 +17,14 @@
                 <tr>
                     <th>Kullanıcı Adı</th>
                     <th>Sorun Başlık</th>
+                    <th>Sorun Statüsü</th>
                 </tr>
                 @foreach (var Hata in Model)
                 {
                     <tr>
                         <td>@Hata.KullaniciAdi</td>
                         <td>@Hata.HataBaslik</td>
+                        <td>@Hata.HataÖncelik</td>
                         <td>
                             <a href="/Home/Detay/@Hata.HataId" class="btn btn-outline-success" >Detay</a>
                         </td>
